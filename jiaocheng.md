@@ -1,4 +1,4 @@
-# Ubuntu20.04 + ros2 galatic + autoware.universe + cuda11.6(cudnn8)
+# Ubuntu20.04 + ros2 galatic + autoware.universe + cuda11.6(cudnn8) + OpenPlanner
 
 
 ## ROS galactic
@@ -32,3 +32,11 @@ universe/external/open_planner:\
 
 ### load the code to local
 vcs import src < autoware.repos
+
+### install the dependencies for autoware
+rosdep update --include-eol-distros \
+source /opt/ros/galactic/setup.bash \
+rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+
+
+
