@@ -1,5 +1,7 @@
 # Ubuntu20.04 + ros2 galatic + autoware.universe + cuda11.6(cudnn8) + OpenPlanner
 
+### already have cuda+cudnn 
+
 
 ## ROS galactic
 wget http://fishros.com/install -O fishros && . fishros (option 1>>2>>3>>1)\
@@ -42,6 +44,11 @@ vcs import src < autoware.repos
 rosdep update --include-eol-distros \
 source /opt/ros/galactic/setup.bash \
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+
+### cmake autoware
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+
+
 
 
 
