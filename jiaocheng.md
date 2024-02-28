@@ -2,20 +2,20 @@
 
 
 ## ROS galactic
-wget http://fishros.com/install -O fishros && . fishros (option 1>>2>>1>>1)
-Test ros
-source /opt/ros/galactic/setup.bash
-ros2 run demo_nodes_cpp talker
+wget http://fishros.com/install -O fishros && . fishros (option 1>>2>>1>>1)  \
+Test ros\
+source /opt/ros/galactic/setup.bash\
+ros2 run demo_nodes_cpp talker\
 
 ## Autoware.universe
-###git
-sudo apt-get -y update
-sudo apt-get -y install git
+###git\
+sudo apt-get -y update\
+sudo apt-get -y install git\
 
 ### clone autoware
-mkdir autoware_universe
-cd autoware_universe/
-git clone https://github.com/autowarefoundation/autoware.git -b galactic
+mkdir autoware_universe \
+cd autoware_universe/ \
+git clone https://github.com/autowarefoundation/autoware.git -b galactic  ]
 
 ### install dependencies
 cd autoware
