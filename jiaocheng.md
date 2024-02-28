@@ -8,7 +8,7 @@ source /opt/ros/galactic/setup.bash\
 ros2 run demo_nodes_cpp talker
 
 ## Autoware.universe
-###git\
+### git
 sudo apt-get -y update\
 sudo apt-get -y install git
 
@@ -23,7 +23,7 @@ cd autoware\
 
 ### change the source
 mkdir src\
-sudo gedit autoware.repos\
+sudo gedit autoware.repos
 ### add in the line 28
 universe/external/open_planner:\
     type: git\
