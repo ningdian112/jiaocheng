@@ -2,8 +2,13 @@
 
 
 ## ROS galactic
-wget http://fishros.com/install -O fishros && . fishros (option 1>>2>>1>>1)  \
-Test ros\
+wget http://fishros.com/install -O fishros && . fishros (option 1>>2>>3>>1)\
+  [1]:一键安装(推荐):ROS(支持ROS/ROS2,树莓派Jetson)\
+  [2]:不更换继续安装\
+  [3]:galactic(ROS2)\
+  [1]:galactic(ROS2)桌面版\
+
+### Test ros
 source /opt/ros/galactic/setup.bash\
 ros2 run demo_nodes_cpp talker
 
